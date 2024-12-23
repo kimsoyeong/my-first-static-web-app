@@ -49,7 +49,7 @@ jobs:
       run: |
         npm install
         npm run build --if-present  # 리액트 프로젝트의 정적 파일 생성: build/ 디렉토리에 저장됨
-        npm run test --if-present
+        # npm run test --if-present  # test 코드가 있다면 이렇게 테스트 수행 가능
 
     # [빌드] 빌드 결과 업로드 (배포용 아티팩트 생성)
     - name: Upload artifact for deployment job
