@@ -6,6 +6,19 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 <br />
 
+**정적 파일 배포 (Azure Static Web Apps 또는 Web App):**
+
+- React의 build 디렉토리를 Azure에 업로드.
+- 서버 측 설정 없이 간단한 배포.
+
+**Node.js를 사용한 배포 (Azure Web App):**
+
+- serve와 같은 도구를 사용해 정적 파일을 서빙.
+- Node.js 애플리케이션처럼 동작.
+
+
+<br />
+
 ## Azure Web App의 동작 방식
 1. 정적 파일 배포:
    - build 디렉토리에 있는 정적 파일을 자동으로 서빙하지 않음.
