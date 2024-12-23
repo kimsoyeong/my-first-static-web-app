@@ -1,4 +1,5 @@
-# React basic
+
+# React basic ([참고 URL](https://learn.microsoft.com/ko-kr/azure/app-service/quickstart-nodejs?tabs=linux&pivots=development-environment-azure-portal))
 
 [Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/overview) allows you to easily build [React](https://reactjs.org/) apps in minutes. Use this repo with the [React quickstart](https://docs.microsoft.com/azure/static-web-apps/getting-started?tabs=react) to build and customize a new static site.
 
