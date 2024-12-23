@@ -4,6 +4,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+<br />
 
 ## Azure Web App의 동작 방식
 1. 정적 파일 배포:
@@ -13,8 +14,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
    - Azure Web App (AWA)은 Node.js 프로젝트에서 기본적으로 **`package.json`의 `start` 스크립트를 기준으로 애플리케이션을 실행**. (다시 말해, AWA는 `npm start`에 의해 실행되는 작업을 수행한다.)
    - React 애플리케이션은 기본적으로 정적 파일을 서빙하지 않으므로, `serve`와 같은 도구의 명시적 설치 필요.
 
+> React 프로젝트는 기본적으로 3000 포트를 통해 서빙된다.
+> 
+> 하지만, Azure Web App은 80(HTTP) 또는 443(HTTPS) 포트를 통해 애플리케이션에 접속하게 한다.
+> 
+> `serve` 패키지가 자동적으로 process.env.PORT 환경 변수를 인식하기 때문에, 추가 설정 없이도 Azure Web App에서 정상 동작한다.
 
-## 방법
+<br />
+
+## GitHub Actions를 활용한 React.js 프로젝트의 Azure Web App 배포 방법
 
 1. Azure Web App 생성
 
@@ -102,7 +110,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 4. 테스트 배포
    - main 브랜치에 코드 푸시 또는 GitHub Actions에서 수동으로 워크플로 실행.
-  
+
+<br />
 
 #### Azure Web App의 시작 명령 수동 설정 (선택 사항)
 만약 Azure Web App에서 자동으로 `serve -s build`를 실행하지 않는 경우, 아래와 같이 시작 명령을 수동으로 설정 가능하다.
